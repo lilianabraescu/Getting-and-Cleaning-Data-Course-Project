@@ -4,9 +4,13 @@ This repository is Liliana Braescu’s submission for the Getting and Cleaning D
 It contains the following items:
 
 (i)	“README.md” which describes the problem & the story of the “Human Activity Recognition Using Smartphones Data Set” used in the project; steps followed for data preparation; variables, merged data and all transformations performed until the final tidy data are obtained. 
+
 (ii)	Human Activity Recognition Using Smartphones Data Set.
+
 (iii)	The R script “run_analysis.R” created to perform data preparation, and the five steps required in the project course definition.
+
 (iv)	The “Tidy_Data.txt” exported at the end of the step 5.
+
 (v)	The “CodeBook.Rmd” file which describe each variable in the data set, as well as their updates.
 
 ## Problem Description
