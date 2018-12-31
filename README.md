@@ -41,11 +41,11 @@ Assign each data to variables:
 
 ## Steps Required in the Project
 1.	Merge the training and the test sets to create one data set
-o	x_train and x_test are merged using rbind() function; the obtained  “x” has dimension (10299, 561).
-o	y_train and y_test are merged using rbind() function; the obtained “y” has dimension (10299, 1).
-o	subject_train and subject_test are merged using rbind() function; the obtained “subject” has dimension (10299, 1).
-o	The above “x”, “y”, and “subject” are merged using cbind() function; the obtained “Merged_Data” has dimension (10299, 563).
-o	Dimensions of the merged objects are checked; structure of the R object “Merged_Data” is printed.
+o first	x_train and x_test are merged using rbind() function; the obtained  “x” has dimension (10299, 561).
+o	second y_train and y_test are merged using rbind() function; the obtained “y” has dimension (10299, 1).
+o	third subject_train and subject_test are merged using rbind() function; the obtained “subject” has dimension (10299, 1).
+o	fourth The above “x”, “y”, and “subject” are merged using cbind() function; the obtained “Merged_Data” has dimension (10299, 563).
+o	fifth Dimensions of the merged objects are checked; structure of the R object “Merged_Data” is printed.
 2.	Extract measurements on the mean and standard deviation
 The “mean_std” is extracted from the “Merged_Data” by subsetting. Columns named “subject” and “code” are selected, and the measurements for the “mean” and “std” (standard deviation) are generated.
 3.	Use descriptive activity names to name the activities in the data set
@@ -66,7 +66,7 @@ The final “Tidy_Data” set was created by summarizing “Merged_Data” with 
 A .txt file was created with write.table() using row.name=FALSE according to the instructions received for the course project submission.
 
 
-References:
+### References:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
 
 Files can be found in the branch GettingCleaningData.
