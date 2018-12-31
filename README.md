@@ -56,27 +56,27 @@ Assign each data to variables:
 
 
 ## Steps Required in the Project
-1.	Merge the training and the test sets to create one data set
+#### 1.	Merge the training and the test sets to create one data set
 
-o first	x_train and x_test are merged using rbind() function; the obtained  “x” has dimension (10299, 561).
+o x_train and x_test are merged using rbind() function; the obtained  “x” has dimension (10299, 561).
 
-o	second y_train and y_test are merged using rbind() function; the obtained “y” has dimension (10299, 1).
+o	y_train and y_test are merged using rbind() function; the obtained “y” has dimension (10299, 1).
 
-o	third subject_train and subject_test are merged using rbind() function; the obtained “subject” has dimension (10299, 1).
+o	subject_train and subject_test are merged using rbind() function; the obtained “subject” has dimension (10299, 1).
 
-o	fourth The above “x”, “y”, and “subject” are merged using cbind() function; the obtained “Merged_Data” has dimension (10299, 563).
+o	The above “x”, “y”, and “subject” are merged using cbind() function; the obtained “Merged_Data” has dimension (10299, 563).
 
-o	fifth Dimensions of the merged objects are checked; structure of the R object “Merged_Data” is printed.
+o	Dimensions of the merged objects are checked; structure of the R object “Merged_Data” is printed.
 
-2.	Extract measurements on the mean and standard deviation
+#### 2.	Extract measurements on the mean and standard deviation
 
 The “mean_std” is extracted from the “Merged_Data” by subsetting. Columns named “subject” and “code” are selected, and the measurements for the “mean” and “std” (standard deviation) are generated.
 
-3.	Use descriptive activity names to name the activities in the data set
+#### 3.	Use descriptive activity names to name the activities in the data set
 
 All numbers of the column named “code” from the “mean_std” are replaced with the corresponding activity taken from the 2nd column of the “activities” variable.
 
-4.	Appropriately labels the data set with descriptive variable names
+#### 4.	Appropriately labels the data set with descriptive variable names
 
 For renaming labels from “Merged_Data”, function gsub() was used to substitute all old labels with new labels as following:
 
@@ -96,7 +96,7 @@ o	"code" column from Merged_data was replaced by "activity"
 
 o	 new names of the entire data set “Merged_Data” are printed.
 
-5.	Independent tidy data set with the average of each variable for each activity and each subject
+#### 5.	Independent tidy data set with the average of each variable for each activity and each subject
 
 The final “Tidy_Data” set was created by summarizing “Merged_Data” with labels from step 4 grouped by “subject” and “activity”; average (mean) of each variable for each activity and each subject was taken using summarise_all() function.
 A .txt file was created with write.table() using row.name=FALSE according to the instructions received for the course project submission.
