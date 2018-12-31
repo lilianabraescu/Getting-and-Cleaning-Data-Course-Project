@@ -3,11 +3,11 @@
 This repository is Liliana Braescu’s submission for the Getting and Cleaning Data course project. 
 It contains the following items:
 
-1.	“README.md” which describes the problem & the story of the “Human Activity Recognition Using Smartphones Data Set” used in the project; steps followed for data preparation; variables, merged data and all transformations performed until the final tidy data are obtained. 
-2.	Human Activity Recognition Using Smartphones Data Set.
-3.	The R script “run_analysis.R” created to perform data preparation, and the five steps required in the project course definition.
-4.	The “Tidy_Data.txt” exported at the end of the step 5.
-5.	The “CodeBook.Rmd” file which describe each variable in the data set, as well as their updates.
+(i)	“README.md” which describes the problem & the story of the “Human Activity Recognition Using Smartphones Data Set” used in the project; steps followed for data preparation; variables, merged data and all transformations performed until the final tidy data are obtained. 
+(ii)	Human Activity Recognition Using Smartphones Data Set.
+(iii)	The R script “run_analysis.R” created to perform data preparation, and the five steps required in the project course definition.
+(iv)	The “Tidy_Data.txt” exported at the end of the step 5.
+(v)	The “CodeBook.Rmd” file which describe each variable in the data set, as well as their updates.
 
 ## Problem Description
 The unprecedented innovation in data science combined with big amount of data driven from mobile and sensor-driven applications brought new insights into wearable computing applications. To capture the state of the user and its environment, sensors can be attached on the subject body for continuous monitoring of numerous physiological signals. 
@@ -18,15 +18,15 @@ For each record, authors provided: (i) tri-axial acceleration from the accelerom
 Starting from the “Human Activity Recognition Using Smartphones Data Set” (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), student should demonstrate ability to collect, work with and clean data set. 
 For this aim, the R script “run_analysis.R” was created to perform data preparation, as well as the five steps required in the project course definition:
 
-(i)	Merges the training and the test sets to create one data set.
+1.	Merges the training and the test sets to create one data set.
 
-(ii)	Extracts only the measurements on the mean and standard deviation for each measurement.
+2.	Extracts only the measurements on the mean and standard deviation for each measurement.
 
-(iii)	Uses descriptive activity names to name the activities in the data set
+3.	Uses descriptive activity names to name the activities in the data set
 
-(iv)	Appropriately labels the data set with descriptive activity names.
+4.	Appropriately labels the data set with descriptive activity names.
 
-(v)	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+5.	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Data Preparation
 #### Download the dataset
