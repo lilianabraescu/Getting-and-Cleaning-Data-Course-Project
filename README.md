@@ -9,12 +9,12 @@ It contains the following items:
 4.	The “Tidy_Data.txt” exported at the end of the step 5.
 5.	The “CodeBook.Rmd” file which describe each variable in the data set, as well as their updates.
 
-Problem Description
+## Problem Description
 The unprecedented innovation in data science combined with big amount of data driven from mobile and sensor-driven applications brought new insights into wearable computing applications. To capture the state of the user and its environment, sensors can be attached on the subject body for continuous monitoring of numerous physiological signals. 
 A novel hardware-friendly approach with reduced costs in terms of energy and computational power was reported by Jorge L. Reyes-Ortiz and his team (Ref. [1]), which used waist-mounted smartphone (Samsung Galaxy S II) with embedded inertial sensors to record data from 30 volunteers with ages between 19-48 years old. The “Human Activity Recognition Using Smartphones Data Set” was built from recordings of those 30 subjects while performing six daily activities: walking, walking-upstairs, walking-downstairs, sitting, standing and laying. The embedded accelerometer and gyroscope captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50HZ. The obtained dataset has been randomly partitioned into two sets: 70% of the volunteers were selected for generating training data, and the remained 30% subjects generated the test data.
 For each record, authors provided: (i) tri-axial acceleration from the accelerometer (total acceleration) and the estimated body acceleration; (ii) tri-axial angular velocity from the gyroscope; (iii) a 561-feature vector with time and frequency domain variables; (iv) activities labels; and (v) an identifier of the subject who carried out the experiment.
 
-Project Purpose
+## Project Purpose
 Starting from the “Human Activity Recognition Using Smartphones Data Set” (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), student should demonstrate ability to collect, work with and clean data set. 
 For this aim, the R script “run_analysis.R” was created to perform data preparation, as well as the five steps required in the project course definition:
 (i)	Merges the training and the test sets to create one data set.
@@ -23,7 +23,7 @@ For this aim, the R script “run_analysis.R” was created to perform data prep
 (iv)	Appropriately labels the data set with descriptive activity names.
 (v)	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
-Data Preparation
+## Data Preparation
 Download the dataset
 •	Folder “Samsungdata” was created in the current working directory for downloading zip file - called “Samsung.zip”.
 •	Unzip the file “Samsung.zip” into the exit directory “Samsungdata”. The unzipped data are in the folder “UCI HAR Dataset” which contains “test” and “train” folders, together with the files README.txt, features_info.txt, features.txt, and activity_labels.txt. 
@@ -39,7 +39,7 @@ Assign each data to variables:
 •	y_train <- y_train.txt with 7352 rows and 1 column
 
 
-Steps Required in the Project
+## Steps Required in the Project
 1.	Merge the training and the test sets to create one data set
 o	x_train and x_test are merged using rbind() function; the obtained  “x” has dimension (10299, 561).
 o	y_train and y_test are merged using rbind() function; the obtained “y” has dimension (10299, 1).
@@ -69,3 +69,4 @@ A .txt file was created with write.table() using row.name=FALSE according to the
 References:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
 
+Files can be found in the branch GettingCleaningData.
