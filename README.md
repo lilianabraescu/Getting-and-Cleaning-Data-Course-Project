@@ -17,10 +17,15 @@ For each record, authors provided: (i) tri-axial acceleration from the accelerom
 ## Project Purpose
 Starting from the “Human Activity Recognition Using Smartphones Data Set” (https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip), student should demonstrate ability to collect, work with and clean data set. 
 For this aim, the R script “run_analysis.R” was created to perform data preparation, as well as the five steps required in the project course definition:
+
 (i)	Merges the training and the test sets to create one data set.
+
 (ii)	Extracts only the measurements on the mean and standard deviation for each measurement.
+
 (iii)	Uses descriptive activity names to name the activities in the data set
+
 (iv)	Appropriately labels the data set with descriptive activity names.
+
 (v)	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Data Preparation
