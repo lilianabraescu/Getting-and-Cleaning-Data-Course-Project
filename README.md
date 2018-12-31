@@ -29,18 +29,29 @@ For this aim, the R script “run_analysis.R” was created to perform data prep
 (v)	Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Data Preparation
-Download the dataset
+#### Download the dataset
+
 •	Folder “Samsungdata” was created in the current working directory for downloading zip file - called “Samsung.zip”.
+
 •	Unzip the file “Samsung.zip” into the exit directory “Samsungdata”. The unzipped data are in the folder “UCI HAR Dataset” which contains “test” and “train” folders, together with the files README.txt, features_info.txt, features.txt, and activity_labels.txt. 
-Read the dataset
+
+#### Read the dataset
 Assign each data to variables:
+
 •	features <- features.txt with 561 rows and 2 columns
+
 •	activities <- activity_labels.txt with 561 rows and 2 columns
+
 •	subject_test <- subject_test.txt with 2947 rows and 1 column (test set)
+
 •	x_test <- x_test.txt with 2947 rows and 561 columns
+
 •	y_test <- y_test.txt with 2947 rows and 1 column
+
 •	subject_train <- subject_train.txt with 7352 rows and 1 column (train set)
+
 •	x_train <- x_train.txt with 7352 rows and 561 columns
+
 •	y_train <- y_train.txt with 7352 rows and 1 column
 
 
