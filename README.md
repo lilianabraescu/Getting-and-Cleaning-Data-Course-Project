@@ -96,7 +96,7 @@ For renaming labels, function gsub() was used to substitute all old labels with 
 •	 new names are printed.
 
 #### 5.	Independent tidy data set with the average of each variable for each activity and each subject
-First, “subject” was set as factor variable, and  “Tidy_Data” was created as a data set with average (mean) of each “subject” and “descriptive_activity”. Finally, entries were ordered and a .txt file was created with write.table() using row.name=FALSE according to the received instructions for course project submission.
+First, “subject” was set as factor variable, and  “Tidy_Data” was created as a data set with average (mean) of each variable for each “subject” and “descriptive_activity”. Finally, entries were ordered and a .txt file was created with write.table() using row.name=FALSE according to the received instructions for course project submission.
 
 ### References:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
