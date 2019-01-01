@@ -77,7 +77,7 @@ The “mean_std” is extracted from the “Merged_Data” by subsetting. Column
 All numbers of the column named “code” from the “mean_std” are replaced with the corresponding activity taken from the 2nd column of the “activities” variable.
 
 #### 4.	Appropriately labels the data set with descriptive variable names
-For renaming labels from “Merged_Data”, function gsub() was used to substitute all old labels with new labels as following:
+For renaming labels, function gsub() was used to substitute all old labels with new labels as following:
 
 •	prefix "t" replaced by "time"
 
@@ -91,14 +91,12 @@ For renaming labels from “Merged_Data”, function gsub() was used to substitu
 
 •	"BodyBody" replaced by "Body"
 
-•	"code" column from Merged_data was replaced by "activity"
+•	"code" column was replaced by "descriptive_activity"
 
-•	 new names of the entire data set “Merged_Data” are printed.
+•	 new names are printed.
 
 #### 5.	Independent tidy data set with the average of each variable for each activity and each subject
-The final “Tidy_Data” set was created by summarizing “Merged_Data” with labels from step 4 grouped by “subject” and “activity”; average (mean) of each variable for each activity and each subject was taken using summarise_all() function.
-A .txt file was created with write.table() using row.name=FALSE according to the instructions received for the course project submission.
-
+First, “subject” was set as factor variable, and  “Tidy_Data” was created as a data set with average (mean) of each “subject” and “descriptive_activity”. Finally, entries were ordered and a .txt file was created with write.table() using row.name=FALSE according to the received instructions for course project submission.
 
 ### References:
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012.
