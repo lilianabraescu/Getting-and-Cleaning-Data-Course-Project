@@ -1,0 +1,381 @@
+---
+title: "CODE BOOK"
+output: 
+  html_document:
+    keep_md: true
+---
+
+# Getting and Cleaning Data Course Project
+
+### Variables Description
+
+[1]	"subject": subject ID.
+
+[2]	"code": code number 1:6 corresponding to the performed activities as following: 1-WALKING, 2-WALKING_UPSTAIRS, 3-WALKING_DOWNSTAIRS, 4-SITTING, 5-STANDING, 6-LAYING.
+
+[3]	"tBodyAcc.mean()-X": mean of the time domain signal for body acceleration in the X direction.
+
+[4]	"tBodyAcc.mean()-Y": mean of the time domain signal for body acceleration in the Y direction. 
+
+[5]	"tBodyAcc.mean()-Z": mean of the time domain signal for body acceleration in the Z direction.
+
+[6]	"tGravityAcc.mean()-X": mean of the time domain signal for gravity acceleration in the X direction.
+
+[7]	 "tGravityAcc.mean()-Y": mean of the time domain signal for gravity acceleration in the Y direction.
+
+[8]	"tGravityAcc.mean()-Z": mean of the time domain signal for gravity acceleration in the Z direction.
+
+[9]	"tBodyAccJerk.mean()-X": mean of the Jerk signal from body linear acceleration derived in time, for X direction. 
+
+[10]	"tBodyAccJerk.mean()-Y": mean of the Jerk signal from body linear acceleration derived in time, for Y direction.
+
+[11]	"tBodyAccJerk.mean()-Z" mean of the Jerk signal from body linear acceleration derived in time, for Z direction. 
+
+[12]	 "tBodyGyro.mean()-X": mean of the time domain signal for body angular velocity in the X direction.  
+
+[13]	"tBodyGyro.mean()-Y": mean of the time domain signal for body angular velocity in the Y direction.  
+
+[14]	"tBodyGyro.mean()-Z": mean of the time domain signal for body angular velocity in the Z direction.  
+
+[15]	"tBodyGyroJerk.mean()-X": mean of the Jerk signal from body angular velocity derived in time, for X direction.  
+
+[16]	"tBodyGyroJerk.mean()-Y": mean of the Jerk signal from body angular velocity derived in time, for Y direction.  
+
+[17]	"tBodyGyroJerk.mean()Z": mean of the Jerk signal from body angular velocity derived in time, for Z direction.  
+
+[18]	"tBodyAccMag.mean()": mean of the magnitude of time domain three-dimensional signal for body acceleration.                 
+
+[19]	"tGravityAccMag.mean()": mean of the magnitude of time domain three-dimensional signal for gravity acceleration.                   
+
+[20]	"tBodyAccJerkMag.mean()": mean of the magnitude of time domain three-dimensional Jerk signal for body acceleration.                                 
+
+[21]	"tBodyGyroMag.mean()": mean of the magnitude of time domain three-dimensional signal for body angular velocity.                   
+
+[22]	"tBodyGyroJerkMag.mean()":mean of the magnitude of time domain three-dimensional Jerk signal for body angular velocity.
+
+[23]	 "fBodyAcc.mean()X": mean of the Fast Fourier Transform (FFT) applied to body acceleration in the X direction.
+
+[24]	 "fBodyAcc.mean()-Y": mean of the FFT applied to the body acceleration in the Y direction.
+
+[25]	"fBodyAcc.mean()-Z": mean of the FFT applied to the body acceleration in the Z direction.
+
+[26]	"fBodyAcc.meanFreq()-X": mean frequency of the FFT applied to body acceleration in the X direction.
+
+[27]	"fBodyAcc.meanFreq()-Y": mean frequency of the FFT applied to body acceleration in the Y direction.
+
+[28]	"fBodyAcc.meanFreq()-Z": mean frequency of the FFT applied to body acceleration in the Z direction.
+
+[29]	"fBodyAccJerk.mean()-X": mean of the FFT applied to Jerk signal of body linear acceleration for X direction.
+
+[30]	 "fBodyAccJerk.mean()Y": mean of the FFT applied to Jerk signal of body linear acceleration for Y direction.
+
+[31]	"fBodyAccJerk.mean()-Z": mean of the FFT applied to Jerk signal of body linear acceleration for Z direction.
+
+[32]	"fBodyAccJerk.meanFreq()-X": mean frequency of the FFT applied to Jerk signal of body linear acceleration for X direction.
+
+[33]	"fBodyAccJerk.meanFreq()-Y": mean frequency of the FFT applied to Jerk signal of body linear acceleration for Y direction.
+
+[34]	"fBodyAccJerk.meanFreq()-Z": mean frequency of the FFT applied to Jerk signal of body linear acceleration for Z direction.
+
+[35]	"fBodyGyro.mean.()-X": mean of the FFT applied to the body angular velocity in the X direction.
+
+[36]	"fBodyGyro.mean()-Y": mean of the FFT applied to the body angular velocity in the Y direction.
+
+[37]	"fBodyGyro.mean()-Z": mean of the FFT applied to the body angular velocity in the Z direction.
+
+[38]	"fBodyGyro.meanFreq()-X": mean frequency of the FFT applied to the body angular velocity in the X direction.
+
+[39]	 fBodyGyro.meanFreq()-Y": mean frequency of the FFT applied to the body angular velocity in the Y direction.
+
+[40]	"fBodyGyro.meanFreq()-Z": mean frequency of the FFT applied to the body angular velocity in the Z direction. 
+
+[41]	"fBodyAccMag.mean()": mean of the magnitude of the FFT for body acceleration.
+
+[42]	"fBodyAccMag.meanFreq()": mean frequency of the magnitude of the FFT for body acceleration. 
+
+[43]	"fBodyBodyAccJerkMag.mean()": mean of the magnitude of the FFT for body Jerk body acceleration.
+
+[44]	 "fBodyBodyAccJerkMag.meanFreq()": mean frequency of the magnitude of the FFT for body Jerk body acceleration.
+
+[45]	"fBodyBodyGyroMag.mean()": mean of the magnitude of the FFT for body Jerk body angular velocity.
+
+[46]	"fBodyBodyGyroMag.meanFreq()": mean frequency of the magnitude of the FFT for body Jerk body angular velocity.
+
+[47]	 "fBodyBodyGyroJerkMag.mean()": mean of the magnitude of the FFT for body Jerk body angular velocity.
+
+[48]	"fBodyBodyGyroJerkMag.meanFreq()": mean frequency of the magnitude of the FFT for body Jerk body angular velocity.     
+
+[49]	"angle.tBodyAccMean.gravity.": angle between mean of the time domain signal for body acceleration and gravity.
+
+[50]	"angle.tBodyAccJerkMean.gravityMean.": angle between mean of the time domain Jerk signal for body acceleration and gravitational mean.
+
+[51]	 "angle.tBodyGyroMean.gravityMean.": angle between mean of the time domain of body angular velocity and gravitational mean.
+
+[52]	"angle.tBodyGyroJerkMean.gravityMean.": angle between mean of the time domain of Jerk body angular velocity and gravitational mean.
+
+[53]	"angle.X.gravityMean.":  angle between X and gravitational mean.
+
+[54]	"angle.Y.gravityMean.":  angle between Y and gravitational mean. 
+
+[55]	"angle.Z.gravityMean.": angle between Z and gravitational mean.
+
+[56]	"tBodyAcc.std()-X": standard deviation of the time domain signal for body acceleration in the X direction. 
+
+
+[57]	"tBodyAcc.std()-Y": standard deviation of the time domain signal for body acceleration in the Y direction. 
+
+[58]	"tBodyAcc.std()-Z": standard deviation of the time domain signal for body acceleration in the Z direction.
+
+[59]	"tGravityAcc.std()-X": standard deviation of the time domain signal for gravity acceleration in the X direction.
+
+[60]	"tGravityAcc.std()-Y": standard deviation of the time domain signal for gravity acceleration in the Y direction.
+
+[61]	"tGravityAcc.std()-Z": standard deviation of the time domain signal for gravity acceleration in the Z direction.
+
+[62]	 "tBodyAccJerk.std()-X": standard deviation of the Jerk signal from body linear acceleration derived in time, for X direction.
+
+[63]	"tBodyAccJerk.std()-Y": standard deviation of the Jerk signal from body linear acceleration derived in time, for Y direction.
+
+[64]	"tBodyAccJerk.std()-Z": standard deviation of the Jerk signal from body linear acceleration derived in time, for Z direction.
+
+[65]	"tBodyGyro.std...X": standard deviation of the time domain signal for body angular velocity in the X direction.
+
+[66]	"tBodyGyro.std...Y": standard deviation of the time domain signal for body angular velocity in the Y direction.
+
+[67]	 tBodyGyro.std...Z": standard deviation of the time domain signal for body angular velocity in the Z direction. 
+
+[68]	"tBodyGyroJerk.std()-X": standard deviation of the Jerk signal from body angular velocity derived in time, for X direction.
+
+[69]	"tBodyGyroJerk.std()-Y": standard deviation of the Jerk signal from body angular velocity derived in time, for Y direction.
+
+[70]	"tBodyGyroJerk.std()-Z": standard deviation of the Jerk signal from body angular velocity derived in time, for Z direction.
+
+[71]	"tBodyAccMag.std()": standard deviation of the magnitude of time domain three-dimensional signal for body acceleration.
+
+[72]	"tGravityAccMag.std()": standard deviation of the magnitude of time domain three-dimensional signal for gravity acceleration.
+
+[73]	"tBodyAccJerkMag.std()": standard deviation of the magnitude of time domain three-dimensional Jerk signal for body acceleration.
+
+[74]	"tBodyGyroMag.std()": standard deviation of the magnitude of time domain three-dimensional signal for body angular velocity.
+
+[75]	"tBodyGyroJerkMag.std()": standard deviation of the magnitude of time domain three-dimensional Jerk signal for body angular velocity.
+
+[76]	"fBodyAcc.std()-X": standard deviation of the Fast Fourier Transform (FFT) applied to body acceleration in the X direction.
+
+[77]	"fBodyAcc.std()-Y": standard deviation of the FFT applied to body acceleration in the Y direction.
+
+[78]	"fBodyAcc.std()-Z": standard deviation of the FFT applied to body acceleration in the Z direction. 
+
+[79]	"fBodyAccJerk.std()-X": standard deviation of the FFT applied to Jerk signal of body linear acceleration for X direction.
+
+[80]	"fBodyAccJerk.std()-Y": standard deviation of the FFT applied to Jerk signal of body linear acceleration for Y direction.
+
+[81]	"fBodyAccJerk.std()-Z": standard deviation of the FFT applied to Jerk signal of body linear acceleration for Z direction.
+
+[82]	"fBodyGyro.std()-X": standard deviation of the FFT applied to the body angular velocity in the X direction.
+
+[83]	"fBodyGyro.std()-Y": standard deviation of the FFT applied to the body angular velocity in the Y direction.
+
+[84]	"fBodyGyro.std()-Z": standard deviation of the FFT applied to the body angular velocity in the Z direction.
+
+[85]	"fBodyAccMag.std()": standard deviation of the magnitude of the FFT for body acceleration.
+
+[86]	"fBodyBodyAccJerkMag.std()": standard deviation of the magnitude of the FFT for body Jerk body acceleration.
+
+[87]	"fBodyBodyGyroMag.std()": standard deviation of the magnitude of the FFT for body - body angular velocity.
+
+[88]	"fBodyBodyGyroJerkMag.std()":standard deviation of the magnitude of the FFT for body Jerk body angular velocity.  
+
+### Labels of the data set are changed by the descriptive variable names:
+•	prefix "t" replaced by "time"
+
+•	prefix "f" replaced by "frequency"
+
+•	"Acc" replaced by "accelerometer"
+
+•	"Gyro" replaced by "gyroscope"
+
+•	"Mag" replaced by "magnitude"
+
+•	"BodyBody" replaced by "Body"
+
+•	"code" column was replaced by "descriptive_activity"
+
+**The above variables become:**
+
+[1] "subject"
+
+[2] "descriptive_activity"
+
+[3] "timeBodyaccelerometer.mean()-X"
+
+[3] "timeBodyaccelerometer.mean()-Y"      
+
+[5] "timeBodyaccelerometer.mean()-Z" 
+
+[6] "timeGravityaccelerometer.mean()-X"  
+
+[7] "timeGravityaccelerometer.mean()-Y"  
+
+[8] "timeGravityaccelerometer.mean()-Z"   
+
+[9] "timeBodyaccelerometerJerk.mean()- X"  
+
+[10] "timeBodyaccelerometerJerk.mean()-Y"  
+
+[11] "timeBodyaccelerometerJerk.mean()-Z"  
+
+[12] "timeBodygyroscope.mean()-X"  
+
+[13] "timeBodygyroscope.mean()-Y" 
+
+[14] "timeBodygyroscope.mean()-Z"  
+
+[15] "timeBodygyroscopeJerk.mean()-X"  
+
+[16] "timeBodygyroscopeJerk.mean()-Y"   
+
+[17] "timeBodygyroscopeJerk.mean()-Z"  
+
+[18] "timeBodyaccelerometermagnitude.mean()"   
+
+[19] "timeGravityaccelerometermagnitude.mean()"   
+
+[20] "timeBodyaccelerometerJerkmagnitude.mean()"   
+
+[21] "timeBodygyroscopemagnitude.mean()"   
+
+[22] "timeBodygyroscopeJerkmagnitude.mean()"  
+
+[23] "frequencyBodyaccelerometer.mean()-X"   
+
+[24] "frequencyBodyaccelerometer.mean()-Y"   
+
+[25] "frequencyBodyaccelerometer.mean()-Z" 
+
+[26] "frequencyBodyaccelerometer.meanFreq()-X"  
+
+[27] "frequencyBodyaccelerometer.meanFreq()-Y"   
+
+[28] "frequencyBodyaccelerometer.meanFreq()-Z"   
+
+[29] "frequencyBodyaccelerometerJerk.mean()-X"   
+
+[30] "frequencyBodyaccelerometerJerk.mean()-Y" 
+
+[31] "frequencyBodyaccelerometerJerk.mean()-Z"  
+
+[32] "frequencyBodyaccelerometerJerk.meanFreq()-X" 
+
+[33] "frequencyBodyaccelerometerJerk.meanFreq()-Y"   
+
+[34] "frequencyBodyaccelerometerJerk.meanFreq()-Z"  
+
+[35] "frequencyBodygyroscope.mean()-X"      
+
+[36] "frequencyBodygyroscope.mean()-Y"   
+
+[37] "frequencyBodygyroscope.mean()-Z" 
+
+[38] "frequencyBodygyroscope.meanFreq()-X"   
+
+[39] "frequencyBodygyroscope.meanFreq()-Y"    
+
+[40] "frequencyBodygyroscope.meanFreq()-Z"     
+
+[41] "frequencyBodyaccelerometermagnitude.mean()"   
+
+[42] "frequencyBodyaccelerometermagnitude.meanFreq()"    
+
+[43] "frequencyBodyaccelerometerJerkmagnitude.mean()"    
+
+[44] "frequencyBodyaccelerometerJerkmagnitude.meanFreq()"
+
+[45] "frequencyBodygyroscopemagnitude.mean()"      
+
+[46] "frequencyBodygyroscopemagnitude.meanFreq()"  
+
+[47] "frequencyBodygyroscopeJerkmagnitude.mean()" 
+
+[48] "frequencyBodygyroscopeJerkmagnitude.meanFreq()"
+
+[49] "angle.tBodyaccelerometerMean.gravity."    
+
+[50] "angle.tBodyaccelerometerJerkMean.gravityMean." 
+
+[51] "angle.tBodygyroscopeMean.gravityMean."   
+
+[52] "angle.tBodygyroscopeJerkMean.gravityMean."  
+
+[53] "angle.X.gravityMean."            
+
+[54] "angle.Y.gravityMean."   
+
+[55] "angle.Z.gravityMean."   
+
+[56] "timeBodyaccelerometer.std()-X" 
+
+[57] "timeBodyaccelerometer.std()-Y"   
+
+[58] "timeBodyaccelerometer.std()-Z"    
+
+[59] "timeGravityaccelerometer.std()-X"  
+
+[60] "timeGravityaccelerometer.std()-Y"   
+
+[61] "timeGravityaccelerometer.std()-Z"   
+
+[62] "timeBodyaccelerometerJerk.std()-X"  
+
+[63] "timeBodyaccelerometerJerk.std()-Y"  
+
+[64] "timeBodyaccelerometerJerk.std()-Z"  
+
+[65] "timeBodygyroscope.std()-X"    
+
+[66] "timeBodygyroscope.std()-Y"   
+
+[67] "timeBodygyroscope.std()-Z"    
+
+[68] "timeBodygyroscopeJerk.std()-X"     
+
+[69] "timeBodygyroscopeJerk.std()-Y"   
+
+[70] "timeBodygyroscopeJerk.std()-Z" 
+
+[71] "timeBodyaccelerometermagnitude.std()"   
+
+[72] "timeGravityaccelerometermagnitude.std()"   
+
+[73] "timeBodyaccelerometerJerkmagnitude.std()"    
+
+[74] "timeBodygyroscopemagnitude.std() "      
+
+[75] "timeBodygyroscopeJerkmagnitude.std()"   
+
+[76] "frequencyBodyaccelerometer.std()-X"  
+
+[77] "frequencyBodyaccelerometer.std()-Y"   
+
+[78] "frequencyBodyaccelerometer.std()-Z"   
+
+[79] "frequencyBodyaccelerometerJerk.std()-X"  
+
+[80] "frequencyBodyaccelerometerJerk.std()-Y"   
+
+[81] "frequencyBodyaccelerometerJerk.std()-Z"   
+
+[82] "frequencyBodygyroscope.std()-X"     
+
+[83] "frequencyBodygyroscope.std()-Y"     
+
+[84] "frequencyBodygyroscope.std()-Z"   
+
+[85] "frequencyBodyaccelerometermagnitude.std()"    
+
+[86] "frequencyBodyaccelerometerJerkmagnitude.std()"   
+
+[87] "frequencyBodygyroscopemagnitude.std()"        
+
+[88] "frequencyBodygyroscopeJerkmagnitude.std()"
+
