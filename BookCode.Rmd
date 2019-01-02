@@ -117,10 +117,6 @@ CODE BOOK
 
 [56]	"tBodyAcc.std()-X": standard deviation of the time domain signal for body acceleration in the X direction. 
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 3840f51e7a6827baae9ba17a06a607b586f0344e
 [57]	"tBodyAcc.std()-Y": standard deviation of the time domain signal for body acceleration in the Y direction. 
 
 [58]	"tBodyAcc.std()-Z": standard deviation of the time domain signal for body acceleration in the Z direction.
@@ -200,11 +196,8 @@ CODE BOOK
 
 •	"code" column was replaced by "descriptive_activity"
 
-<<<<<<< HEAD
-The above variables become:
-=======
+
 #### The above variables become:
->>>>>>> 3840f51e7a6827baae9ba17a06a607b586f0344e
 
 [1] "subject"
 
